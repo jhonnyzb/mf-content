@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="boton-divisor interno">
+    <span class="medium-20 primario" *ngIf="this.widget != null">{{this.widget.name}}</span>
+  </div>
+  <div class="pt-3">
+    <app-embed-main *ngIf="this.widget" [url]="this.widget.url+this.stringParams"></app-embed-main>
+  </div>
+</div>

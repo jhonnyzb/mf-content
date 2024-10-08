@@ -1,0 +1,13 @@
+.img-listado{
+    width: 100%;
+    cursor: pointer;
+}
+.content-img-list{
+    padding: 10px 0;
+    min-height: 70vh;
+}
+.boton-divisor{
+    &.interno{
+      margin: 30px 0 0;
+    }
+}

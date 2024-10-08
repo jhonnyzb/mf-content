@@ -1,0 +1,14 @@
+<div class="container">
+  <div class="boton-divisor terciary interno">
+    <span class="medium-20 primario widgets-mobile">Más beneficios para ti</span>
+  </div>
+  <div class="row text-center content-img-list">
+    <div *ngFor="
+          let widget of listWidgets
+        " class="col-4" [ngClass]="{'mobile-col': pageSize == 1}">
+      <a (click)="showWidget(widget)">
+        <img [src]="widget.image" class="img-listado" alt="noticias">
+      </a>
+    </div>
+  </div>
+</div>

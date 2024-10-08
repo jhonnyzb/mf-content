@@ -1,0 +1,23 @@
+.img-listado {
+  width: 100%;
+  height: inherit;
+  padding-bottom: 2.5%;
+  cursor: pointer;
+}
+
+.content-img-list {
+  padding: 10px 0;
+  padding-bottom: 2.5%
+}
+
+.mobile-col {
+  width: inherit;
+  flex: auto;
+}
+
+.boton-divisor {
+  background-color: var(--ngx-valepro-color-primary);
+  justify-content: initial;
+  align-items: initial;
+  margin: 20px 0 20px;
+}

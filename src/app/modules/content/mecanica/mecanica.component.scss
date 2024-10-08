@@ -1,0 +1,55 @@
+.fondo-titulo {
+  background-color: var(--ngx-valepro-color-negro);
+  margin-top: 2%;
+}
+
+.container-fluid {
+  width: 85%;
+  margin-bottom: 30px;
+}
+
+.boton-divisor {
+  background-color: var(--ngx-valepro-color-primary);
+  margin-top: 30px;
+}
+
+.titulo {
+  margin: 1%;
+  color: var(--ngx-valepro-color-blanco);
+}
+
+.contenedor-botones {
+  display: flex;
+  width: 40%;
+  margin-top: 2%;
+}
+
+.boton-mecanica {
+  width: 100%;
+  background: var(--ngx-valepro-color-blanco);
+  border: 1px solid #fdda24;
+  color: var(--color-negro);
+  border-radius: 30px;
+  height: 40px;
+  margin-right: 5%;
+}
+
+.boton-preguntas {
+  width: 100%;
+  background: #fdda24;
+  border: 1px solid #fdda24;
+  color: black;
+  border-radius: 30px;
+  height: 40px;
+}
+
+@media (max-width: 768px) {
+  .contenedor-botones {
+    width: 100%;
+    margin: 2% 2% 0 2%;
+  }
+
+  .boton-preguntas {
+    margin-right: 20px;
+  }
+}

@@ -1,0 +1,31 @@
+<div class="container">
+
+  <div class="boton-divisor interno boton-filtro ">
+    <span class="medium-20 primario">Noticias</span>
+  </div>
+  <div class="text-center content-img-list">
+    <div *ngFor="
+        let news of newsShowed
+          | paginate
+            : {
+                totalItems: totalItems,
+                itemsPerPage: pageSize,
+                currentPage: currentPage
+              }
+      " class="pt-5 pb-5">
+      <a *ngIf="!news.url" (click)="showNews(news)">
+        <img [src]="news.image" class="img-listado" alt="noticias" />
+      </a>
+      <a *ngIf="news.url" [routerLink]="[news.url]" (click)="showNews(news)">
+        <img [src]="news.image" class="img-listado" alt="noticias" />
+      </a>
+    </div>
+    <div class="row">
+      <div>
+        <pagination-controls (pageChange)="pageChanged($event)" previousLabel="" nextLabel=""
+          screenReaderPaginationLabel="Pagination" screenReaderPageLabel="page">
+        </pagination-controls>
+      </div>
+    </div>
+  </div>
+</div>
